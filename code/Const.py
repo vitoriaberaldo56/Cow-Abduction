@@ -2,11 +2,13 @@
 import pygame
 
 C_ORANGE = (255, 128, 0)
+C_BLUE = (86, 144, 245)
 C_YELLOW = (236, 242, 40)
 C_WHITE = (255, 255, 255)
 C_GREEN = (0, 128, 0)
 C_CYAN = (0, 128, 128)
 C_PURPLE = (153, 144, 252)
+C_RED = (255, 23, 23)
 # E
 EVENT_ENEMY = pygame.USEREVENT + 1
 EVENT_TIMEOUT = pygame.USEREVENT + 2
@@ -18,11 +20,17 @@ ENTITY_SPEED = {
     'Level1Bg4': 4,
     'Level1Bg5': 5,
     'Level1Bg6': 6,
+
     'Level2Bg0': 0,
     'Level2Bg1': 1,
     'Level2Bg2': 2,
     'Level2Bg3': 3,
     'Level2Bg4': 4,
+
+    'Level3Bg0': 0,
+    'Level3Bg1': 1,
+    'Level3Bg2': 2,
+    'Level3Bg3': 3,
     'Player1': 3,
     'Player1Shot': 5,
     'Player2': 3,
@@ -41,11 +49,17 @@ ENTITY_HEALTH = {
     'Level1Bg4': 999,
     'Level1Bg5': 999,
     'Level1Bg6': 999,
+
     'Level2Bg0': 999,
     'Level2Bg1': 999,
     'Level2Bg2': 999,
     'Level2Bg3': 999,
     'Level2Bg4': 999,
+
+    'Level3Bg0': 999,
+    'Level3Bg1': 999,
+    'Level3Bg2': 999,
+    'Level3Bg3': 999,
     'Player1': 300,
     'Player1Shot': 1,
     'Player2': 300,
@@ -64,11 +78,18 @@ ENTITY_DAMAGE = {
     'Level1Bg4': 0,
     'Level1Bg5': 0,
     'Level1Bg6': 0,
+
     'Level2Bg0': 0,
     'Level2Bg1': 0,
     'Level2Bg2': 0,
     'Level2Bg3': 0,
     'Level2Bg4': 0,
+
+    'Level3Bg0': 0,
+    'Level3Bg1': 0,
+    'Level3Bg2': 0,
+    'Level3Bg3': 0,
+
     'Player1': 1,
     'Player1Shot': 25,
     'Player2': 1,
@@ -87,11 +108,18 @@ ENTITY_SCORE = {
     'Level1Bg4': 0,
     'Level1Bg5': 0,
     'Level1Bg6': 0,
+
     'Level2Bg0': 0,
     'Level2Bg1': 0,
     'Level2Bg2': 0,
     'Level2Bg3': 0,
     'Level2Bg4': 0,
+
+    'Level3Bg0': 0,
+    'Level3Bg1': 0,
+    'Level3Bg2': 0,
+    'Level3Bg3': 0,
+
     'Player1': 0,
     'Player1Shot': 0,
     'Player2': 0,
@@ -146,10 +174,10 @@ WIN_WIDTH = 576
 WIN_HEIGHT = 324
 
 # S
-SCORE_POS = {'Title': (WIN_WIDTH / 2, 50),
-             'EnterName': (WIN_WIDTH / 2, 80),
-             'Label': (WIN_WIDTH / 2, 90),
-             'Name': (WIN_WIDTH / 2, 110),
+SCORE_POS = {'Title': (WIN_WIDTH / 2, WIN_HEIGHT / 2),
+             'EnterName': (WIN_WIDTH / 2, 200),
+             'Label': (WIN_WIDTH / 2, 210),
+             'Name': (WIN_WIDTH / 2, 220),
              0: (WIN_WIDTH / 2, 110),
              1: (WIN_WIDTH / 2, 130),
              2: (WIN_WIDTH / 2, 150),
